@@ -1,0 +1,15 @@
+using UnityEngine;
+
+public class Tipodemovimiento
+{
+    int stamnia = 100;
+    bool sprint;
+    bool run;
+    bool walk;
+
+    public void Start()
+    {
+        string movimiento = (sprint && stamnia > 70) ? "Corriendo" : (run && stamnia > 30) ? "Caminando rápido" : "Caminando";
+        Debug.Log(movimiento);
+    }
+}
