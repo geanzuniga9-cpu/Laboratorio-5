@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class Climamapa : MonoBehaviour
+{
+    int clima = 30;
+
+    public void Start()
+    {
+        if (clima < 0) 
+        {
+            Debug.Log("Frio");
+        }
+        else if (clima < 10)
+        {
+            Debug.Log("Lluvioso");
+        }
+        else if (clima < 15)
+        {
+            Debug.Log("Nublado");
+        }
+        else
+        {
+            Debug.Log("Soleado");
+        }
+    }
+}
