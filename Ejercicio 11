@@ -1,0 +1,13 @@
+using UnityEngine;
+
+public class Estaodenemigo
+{
+    bool veJugador;
+    bool estaCerca
+    bool energiaSuficiente
+
+  public void Start()
+    {
+        string enemigo = (veJugador && estaCerca && energiaSuficiente) ? "Atacando" : (veJugador && estaCerca) ? "Persiguiendolo" : "Esperando";
+    }
+}
