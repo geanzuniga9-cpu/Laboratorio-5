@@ -1,0 +1,21 @@
+using UnityEngine;
+
+public class Curacion
+{
+    bool tienePocion;
+    bool zongaSegura;
+    bool Muerto;
+   
+   
+   public void Start()
+   {
+       if (tienePocion && zongaSegura && !Muerto)
+       {
+            Debug.Log("Te has curado");
+       }
+       else
+       {
+           Debug.Log("No puedes curarte");
+       }
+    }
+}
