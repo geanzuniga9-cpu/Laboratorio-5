@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class Habilidadespecial
+{
+    int mana = 100;
+    int stamina = 50;
+    bool enemigoCerca;
+
+    public void start()
+    {
+        if (mana >= 50 && stamina >= 20 && enemigoCerca)
+        {
+            Debug.Log("Habilidad especial activada");
+        }
+        else
+        {
+            Debug.Log("No puedes usar tu habilidad especial");
+        }
+    }
+}
