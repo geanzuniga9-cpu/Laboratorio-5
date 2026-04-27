@@ -1,0 +1,25 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEngine;
+
+public class IAenemigo : MonoBehaviour
+{
+    bool estasLejos;
+    bool veJugador;
+    
+    public void Start()
+    {
+        if (veJugador && !estasLejos)
+        {
+            Debug.Log("El enemigo se acerca a atacarte");
+        }
+
+        else if (veJugador && estasLejos) 
+        {
+            Debug.Log("El enemigo te esta persiguiendo");
+        }
+        else
+        {
+            Debug.Log("El enemigo esta patrullando el area");
+        }
+    }
+}
