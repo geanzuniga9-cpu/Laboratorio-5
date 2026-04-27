@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class Cofreraro : MonoBehaviour
+{
+    bool tieneLLave;
+    bool Combate;
+    int level = 20;
+
+    public void Start()
+    {
+        if (tieneLLave || level >= 15 && !Combate)
+        {
+            Debug.Log("Has abierto el cofre raro");
+        }
+        else
+        {
+            Debug.Log("No puedes abrir este cofre");
+        }
+    }
+}
