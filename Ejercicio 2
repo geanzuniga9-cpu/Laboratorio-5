@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class Ataquepermitido : MonoBehaviour
+{
+    bool Weapon;
+    bool Ammunition;
+    bool Aturdido;
+
+    public void Start()
+    {
+        if (Weapon && Ammunition && !Aturdido)
+        {
+            Debug.Log("Puedes atacar");
+        }
+        else
+        {
+            Debug.Log("No puedes atacar");
+        }
+    }
+}
