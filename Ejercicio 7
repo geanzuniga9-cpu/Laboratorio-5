@@ -1,0 +1,11 @@
+using UnityEngine;
+
+public class Estadovisualsalud: MonoBehaviour
+{
+    int health = 100;
+
+    public void Start()
+    {
+        string estado = (health < 20) ? "Crítico" : (health <= 50) ? "Herido" : "Estable";
+    }
+}
