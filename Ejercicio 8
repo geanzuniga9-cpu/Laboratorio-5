@@ -1,0 +1,14 @@
+using UnityEngine;
+
+public class Zonaespecial: MonoBehaviour
+{
+    int level = 20;
+    bool paseVip;
+    bool combate;
+
+    public void Start()
+    {
+        string acceso = (paseVip || level >= 10 && !combate) ? "Puedes aceder a la zona vip" : "No puedes acceder a la zona vip";
+        Debug.Log(acceso);
+    }
+}
